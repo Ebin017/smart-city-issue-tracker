@@ -58,12 +58,13 @@ This project solves that by providing a digital complaint management system.
 
 SmartCityTracker/
 │
-├── app.py
-├── database.py
-├── issues.db
-├── uploads/
-├── smartcityimages/
-├── README.md
+├── app.py              # Main Streamlit application
+├── database.py         # Database creation & connection
+├── issues.db           # SQLite database
+├── uploads/            # Uploaded issue images
+├── smartcityimages/    # UI / static images
+└── README.md           # Project documentation
+
 
 ---
 
