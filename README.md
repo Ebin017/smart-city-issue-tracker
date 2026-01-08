@@ -56,6 +56,7 @@ This project solves that by providing a digital complaint management system.
 
 ## 📂 Project Structure
 
+```text
 SmartCityTracker/
 │
 ├── app.py              # Main Streamlit application
@@ -64,6 +65,7 @@ SmartCityTracker/
 ├── uploads/            # Uploaded issue images
 ├── smartcityimages/    # UI / static images
 └── README.md           # Project documentation
+
 
 
 ---
