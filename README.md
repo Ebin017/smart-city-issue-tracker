@@ -65,6 +65,7 @@ SmartCityTracker/
 ├── uploads/            # Uploaded issue images
 ├── smartcityimages/    # UI / static images
 └── README.md           # Project documentation
+```
 
 
 
