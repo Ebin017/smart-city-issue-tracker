@@ -58,7 +58,7 @@ Thank you for reporting an issue! We have received your report and it has been s
 📋 YOUR REPORTED ISSUE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Issue ID:     #{issue_id}
+Issue ID:     {issue_id}
 Category:     {category}
 Location:     {location}
 Description:  {description}
@@ -133,7 +133,7 @@ Good news! Your reported issue has been updated.
 📋 ISSUE DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Issue ID:     #{issue_id}
+Issue ID:     {issue_id}
 Category:     {category}
 Location:     {location}
 New Status:   {new_status}
@@ -275,7 +275,7 @@ We're writing to inform you that your reported issue has been removed from our s
 📋 REMOVED ISSUE DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Issue ID:     #{issue_id}
+Issue ID:     {issue_id}
 Category:     {category}
 Location:     {location}
 Description:  {description}
@@ -554,7 +554,7 @@ def main():
 
         if recent_issues:
             for issue in recent_issues:
-                with st.expander(f"Issue #{issue[0]} - {issue[4]} ({issue[7]})"):
+                with st.expander(f"Issue {issue[0]} - {issue[4]} ({issue[7]})"):
                     col1, col2 = st.columns([2, 1])
                     with col1:
                         st.write(f"**Reported by:** {issue[1]}")
@@ -599,7 +599,7 @@ def main():
                     # Basic email validation
                     if "@" in email and "." in email:
                         issue_id, email_sent = add_issue(name, email, description, category, location, image_file)
-                        st.success(f"✅ Issue #{issue_id} submitted successfully!")
+                        st.success(f"✅ Issue {issue_id} submitted successfully!")
 
                         # Show email confirmation status
                         # if email_sent:
@@ -659,7 +659,7 @@ def main():
                 col1, col2 = st.columns([3, 1])
 
                 with col1:
-                    st.markdown(f"### Issue #{issue[0]} - {issue[4]}")
+                    st.markdown(f"### Issue {issue[0]} - {issue[4]}")
                     st.write(f"**Reported by:** {issue[1]}")
                     st.write(f"**Email:** {issue[2] if issue[2] else 'Not provided'}")
                     st.write(f"**Description:** {issue[3]}")
@@ -762,7 +762,7 @@ def main():
             st.markdown("---")
             if issues:
                 for issue in issues:
-                    with st.expander(f"Issue #{issue[0]} - {issue[4]} ({issue[1]}) - {issue[7]}"):
+                    with st.expander(f"Issue {issue[0]} - {issue[4]} ({issue[1]}) - {issue[7]}"):
                         col1, col2 = st.columns([2, 1])
 
                         with col1:
